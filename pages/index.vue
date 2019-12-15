@@ -1,9 +1,9 @@
 <template>
   <div class="container">
     <heart class="heart-container"></heart>
-    <h2 style="color: #fff; font-size: 30px; padding-top: 20px">Gute Nacht mein Schatz!</h2>
-    <h2 style="color: #fff; font-size: 30px; padding-top: 20px">Ich hab dich lieb so wie du bist egal wie gestresst du bist!</h2>
-    <h2 style="color: #fff; font-size: 30px; padding-top: 20px">Ich wünsch dir eine schöne Nacht! Schlaf gut! Bussi!</h2>
+    <h2 style="color: #fff; font-size: 30px; padding-top: 20px">Hey mein Schatz!</h2>
+    <h2 style="color: #fff; font-size: 30px; padding-top: 20px">Guzzi lern brav!</h2>
+    <h2 style="color: #fff; font-size: 30px; padding-top: 20px">Ich geh dann frühstücken und werd am Nachmittag zu dir kommen</h2>
   </div>
 </template>
 
