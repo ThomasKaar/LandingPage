@@ -1,7 +1,6 @@
-
 const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
   router: {
-    base: '/landing-page/'
+    base: '/LandingPage/'
   }
 } : {}
 
