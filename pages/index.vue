@@ -27,7 +27,7 @@
     <h2 style="color: #333; font-size: 25px; padding-top: 20px">
       PS: Wir haben noch eine kleine Überraschung für dich vorbereitet. Schalte einfach den Ton ein und drück auf "Play" 😁	
     </h2>
-    <audio ref="audio" src="/happy_birthday_papa.mp3" preload loop></audio>
+    <audio ref="audio" src="/LandingPage/happy_birthday_papa.mp3" preload loop></audio>
     <button class="button" @click="buttonClick">{{ buttonName }}</button>
   </div>
 </template>
