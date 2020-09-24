@@ -74,7 +74,7 @@ export default {
 */
 .container {
   margin: 0 auto;
-  height: 100vh;
+  min-height: 100vh;
 
   padding: 2rem;
 
