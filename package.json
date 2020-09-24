@@ -14,9 +14,9 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "nuxt": "^2.0.0",
     "@nuxtjs/axios": "^5.3.6",
-    "@nuxtjs/pwa": "^3.0.0-0"
+    "@nuxtjs/pwa": "^3.0.0-0",
+    "nuxt": "^2.14.6"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^1.0.0",
