@@ -27,6 +27,11 @@ export default {
   /*
   ** Global CSS
   */
+
+  router: {
+    base: '/LandingPage/'
+  },
+
   css: [
   ],
   /*
