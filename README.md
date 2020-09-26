@@ -2,6 +2,8 @@
 
 > My first-rate Nuxt.js project
 
+[Website Link](https://thomaskaar.github.io/LandingPage/)
+
 ## Build Setup
 
 ``` bash
