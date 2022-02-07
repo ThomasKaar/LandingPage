@@ -1,34 +1,42 @@
 <template>
   <div class="container">
-    <celebration class="celebration-container"></celebration>
-    <h2 style="color: #333; font-size: 25px; padding-top: 20px">
-      Lieber Papa!
-    </h2>
-    <h2 style="color: #333; font-size: 25px; padding-top: 20px">
-      Ich wünsche dir alles Gute zu deinem 55. Geburtstag.
-    </h2>
-    <h2 style="color: #333; font-size: 25px; padding-top: 20px">
-      Ich finde es sehr schade, dass ich heute nicht bei dir sein kann. Ich
-      hoffe wir können ihn bald nachfeiern und eventuell auch wieder gemeinsam
-      frühstücken 😃
-    </h2>
-    <h2 style="color: #333; font-size: 25px; padding-top: 20px">
-      Magdalena und ich freuen schon sehr, wenn du uns in München besuchen
-      kommst.
-    </h2>
-    <h2 style="color: #333; font-size: 25px; padding-top: 20px">
-      Ich freue mich, dass du mein Papa bist und ich immer auf dich zählen kann!
-    </h2>
-    <h2 style="color: #333; font-size: 25px; padding-top: 20px">
-      Liebe Grüße <br />
-      Thomas
-    </h2>
-
-    <h2 style="color: #333; font-size: 25px; padding-top: 20px">
-      PS: Wir haben noch eine kleine Überraschung für dich vorbereitet. Schalte einfach den Ton ein und drück auf "Play" 😁	
-    </h2>
-    <audio ref="audio" src="/LandingPage/happy_birthday_papa.wav" preload loop></audio>
-    <button class="button" @click="buttonClick">{{ buttonName }}</button>
+    <celebration v-if="matched" class="celebration-container"></celebration>
+    <h2 v-if="matched" class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4">00340434284244534532</h2>
+    <h2 v-if="matched" class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4">Lieber Flo! Du bist uns schon auf den Fersen ;)</h2>
+    <div style="diplay: flex; justify-content: center; align-items: center">
+      <input
+        v-if="!matched"
+        v-model="input_text"
+        class="
+          bg-gray-200
+          appearance-none
+          border-2 border-gray-200
+          rounded
+          py-2
+          px-4
+          text-gray-700
+          leading-tight
+          focus:outline-none focus:bg-white focus:border-purple-500
+        "
+      />
+      <button
+        v-if="!matched"
+        class="
+          shadow
+          bg-purple-500
+          hover:bg-purple-400
+          focus:shadow-outline focus:outline-none
+          text-white
+          font-bold
+          py-2
+          px-4
+          rounded
+        "
+        @click="buttonClick"
+      >
+        {{ buttonName }}
+      </button>
+    </div>
   </div>
 </template>
 
@@ -39,7 +47,9 @@ export default {
   data() {
     return {
       buttonState: "Not Started",
-      buttonName: "Play",
+      buttonName: "Enter",
+      matched: false,
+      input_text: "",
     };
   },
   components: {
@@ -47,19 +57,8 @@ export default {
   },
   methods: {
     buttonClick() {
-      console.log(this.buttonState);
-      switch (this.buttonState) {
-        case "Not Started":
-        case "Paused":
-          this.$refs.audio.play();
-          this.buttonState = "Playing";
-          this.buttonName = "Pause";
-          break;
-        case "Playing":
-          this.$refs.audio.pause();
-          this.buttonState = "Paused";
-          this.buttonName = "Play";
-          break;
+      if (this.input_text === "22304591") {
+        this.matched = true;
       }
     },
   },
@@ -115,5 +114,11 @@ export default {
 .button:focus,
 .button:active {
   outline: none;
+}
+
+.input-field {
+  outline: #333;
+  border: 1px solid #333;
+  margin-right: 5rem;
 }
 </style>
