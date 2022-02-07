@@ -4,6 +4,11 @@
 
 [Website Link](https://thomaskaar.github.io/LandingPage/)
 
+```bash
+# push + deployment
+npm run generate; git add .; git commit -m "Added Flo"; git push; npm run deploy
+```
+
 ## Build Setup
 
 ``` bash
