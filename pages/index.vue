@@ -3,6 +3,7 @@
     <celebration v-if="matched" class="celebration-container"></celebration>
     <h2 v-if="matched" class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4">00340434284244534532</h2>
     <h2 v-if="matched" class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4">Lieber Flo! Du bist uns schon auf den Fersen ;)</h2>
+    <h2 v-if="matched" class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4">Gib diesen Code auf der Webseite von einem 1969 in San Francisco gegründeten Unternehmens ein.</h2>
     <div style="diplay: flex; justify-content: center; align-items: center">
       <input
         v-if="!matched"
